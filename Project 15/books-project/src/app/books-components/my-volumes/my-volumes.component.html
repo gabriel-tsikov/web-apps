@@ -1,0 +1,18 @@
+<div class="content">
+  <div class="title">
+    <h1>My Volumes</h1>
+    <div class="btn-holder">
+        <button class="volume-btn" routerLink="/modal">Add volume</button>
+    </div>
+  </div>
+  <section class="volumes-container">
+    <div class="no-volumes" *ngIf="volumes === undefined">
+      You don't have any volumes, but you can add your first one!
+    </div>
+    <app-my-volume
+      (removeVolumes)="removeVolumes($event)"
+      *ngFor="let volume of volumes"
+      [volume]="volume"
+    ></app-my-volume>
+  </section>
+</div>

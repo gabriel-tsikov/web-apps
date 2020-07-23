@@ -1,0 +1,35 @@
+<div class="pagination-container">
+  <ul class="pagination">
+    <li
+      class="pagination-btn"
+      [ngClass]="{ disabled: pager.currentPage === 1 }"
+    >
+      <a (click)="setPage(1)">First</a>
+    </li>
+    <li
+      class="pagination-btn"
+      [ngClass]="{ disabled: pager.currentPage === 1 }"
+    >
+      <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+    </li>
+    <li
+    class="pagination-numbers"
+      *ngFor="let page of pager.pages"
+      [ngClass]="{ active: pager.currentPage === page }"
+    >
+      <a (click)="setPage(page)">{{ page }}</a>
+    </li>
+    <li
+      [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+      class="pagination-btn"
+    >
+      <a (click)="setPage(pager.currentPage + 1)">Next</a>
+    </li>
+    <li
+      [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+      class="pagination-btn"
+    >
+      <a (click)="setPage(pager.totalPages)">Last</a>
+    </li>
+  </ul>
+</div>

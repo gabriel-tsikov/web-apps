@@ -1,0 +1,11 @@
+<div class="cast-box-holder">
+    <div class="cast-info">
+        <img *ngIf="cast.profile_path == null" src="../../assets/istockphoto-476085198-612x612.jpg" alt="">
+        <img class="cast-img" src="https://image.tmdb.org/t/p/w500{{cast.profile_path}}" alt="">
+        <div class="information">
+            <h2>Name: {{cast.name}}</h2>
+            <h2>Character: {{cast.character}}</h2>
+        </div>
+    </div>
+</div>
+

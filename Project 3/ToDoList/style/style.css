@@ -1,0 +1,88 @@
+body, table, fieldset{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+    background-color: peru;
+
+}
+#usersTable{
+    border-collapse: collapse;
+    min-width: fit-content;
+    
+}
+span{
+    color: white;
+}
+#usersTable tr:nth-child(even){
+     background-color: peru
+}
+tr, td{
+    text-align: center;
+    border-spacing: 15px 15px;
+    
+}
+footer{
+    margin-top: 100px;
+
+}
+#nav ul { 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; }
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+table, th, td {
+    border: 1px black;
+    
+    
+  }
+  fieldset{
+      width: fit-content;
+  }
+  #toDoTable{
+    border-spacing: 15px 15px;
+
+  }
+
+button{
+    font-size: 22px;
+    margin: 0 12px;
+    font-family: 'Baloo Chettan 2', cursive;
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.simpleButtons{
+    font-size: 22px;
+    margin: 0 12px;
+    font-family: 'Baloo Chettan 2', cursive;
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#username, #password, #firstName, #lastName, #task, #description, #title {
+    border-radius: 12px;
+}
+
+ 
+  
+
+ 
+  
+ 
+  
+  
+  
+  

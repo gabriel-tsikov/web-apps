@@ -1,0 +1,11 @@
+<div class="review-box-holder">
+    <div class="review-info">
+        <div class="review-information">
+            <h2>Author: {{review?.author}}</h2>
+            <div class="info-container" [class.show]="show">
+                <h2 >Content: {{review?.content}}</h2>
+            </div>
+            <button class="show-button" (click)="show = !show">{{ show ? 'Show less': 'Show More' }}</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+.cast-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-left: 100px;
+    color: #333;
+}
+
+.cast-container {
+    margin-left: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    color: #333;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.view-cast {
+    margin-top: 20px;
+    border: 0px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #e64343;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.view-cast:hover {
+    background-color: #8c6b6b;
+}
+
+@media screen and (max-width: 960px) {
+    .cast-container { 
+        display: flex;
+        justify-content: center;
+    }
+}

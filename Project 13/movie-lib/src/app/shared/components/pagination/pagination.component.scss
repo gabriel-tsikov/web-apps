@@ -1,0 +1,29 @@
+.pagination-container {
+  width: 100%;
+  font-size: 18px;
+}
+.active {
+  text-shadow: 10px 10px 10px #333;
+}
+.pagination {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.pagination-btn {
+  width: fit-content;
+  margin: 0 10px;
+}
+.disabled {
+  display: none;
+}
+li , a{
+  list-style: none;
+}
+
+.pagination-numbers {
+  min-width: fit-content;
+  margin: 0px 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<div class="login-page">
+    <h1 class="login-title">Register</h1>
+
+    <div class="login-holder">
+        <form [formGroup]="profileForm" (ngSubmit)="register(profileForm.value)" class="form"  autocomplete="off">
+            <div class="errors" *ngIf="registerFailed==true">    
+                Registration failed!
+            </div>
+            <div class="errors" *ngIf="registerFailed==false">
+                Registration successful!
+            </div>
+            <div class="form-holder" >
+                <label class="label-holder" for="email">Email:
+                    <div class="errors" *ngIf="profileForm.get('email').errors?.required && profileForm.get('email').touched">
+                        Cannot be empty
+                    </div>
+                    <div class="errors" *ngIf="profileForm.get('email').invalid">
+                        Email is invalid!
+                    </div>
+                </label>
+                <input formControlName="email" class="form-controller" ngModel type="text" name="email" required id="email" placeholder="Email.."/>
+            </div>  
+            <div class="form-holder" >
+                <label class="label-holder" for="password">Password: 
+                    <div *ngIf="profileForm.get('password').errors?.required && profileForm.get('password').touched">
+                        Cannot be empty
+                    </div>
+                </label>
+                <input formControlName="password" class="form-controller"  type="password" name="password" required id="password" placeholder="Password..."/>
+            </div>
+            <div class="form-holder">
+                <label class="label-holder" for="password">Repeat password:
+                    <div class="errors" *ngIf="profileForm.get('password').value != profileForm.get('password2').value && profileForm.get('password2').value != null">
+                        Passwords does not match!
+                    </div>
+                    <div *ngIf="profileForm.get('password2').errors?.required && profileForm.get('password2').touched">
+                        Cannot be empty
+                    </div>
+                </label>
+                <input   formControlName="password2" class="form-controller"  type="password" name="password" required id="password2" placeholder="Password..."/>
+            </div>
+            
+            
+            <div class="buttons">
+                <button type="submit"  [disabled]="profileForm.invalid" class="login-button">Register</button>
+                <button   type="button" class="cancel-button" (click)="cancelButton()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

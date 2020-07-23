@@ -1,0 +1,148 @@
+
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+    background: #ffffff;
+    justify-content: start;
+
+}
+
+
+.left-side-login{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background: #354052;
+    
+}
+
+.title-div {
+    margin-top: 60%;
+    max-width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.title {
+    
+    color: #ffffff;
+    align-self: center;
+}
+.title-one {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+   
+}
+.title-two {
+    text-align: center;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    
+}
+
+
+
+
+.right-side-login{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.header {
+    
+    font-size: 40px;
+    color: #585858;
+}
+.avatar {
+    width: 180.26px;
+    height: 180.26px;
+    margin-top: 30px;
+}
+.input-div {
+    margin-top: 30px;
+}
+.input input {
+    margin-bottom: 30px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #707070;
+}   
+#login-form  input[type=submit]{
+    margin-top: 51px;
+    border: none;
+    color: white;
+    width: 300px;
+    height: 65px;
+    background: #47BAC1 0% 0% no-repeat padding-box;
+    border-radius: 33px;
+    opacity: 1;
+    margin-bottom: 105px;
+    cursor: pointer;
+}
+
+#login-form  input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .left-side-login{
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width: 1024px){
+    
+    .left-side-login{
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 768px){
+    
+    .left-side-login{
+        display: none;
+    }
+    .right-side-login{
+        margin-top: 20%
+    }
+    
+    
+}
+@media only screen and (max-width: 414px){
+    .header{
+        font-size: 30px;
+    }
+    .avatar {
+        width: 160px;
+        height: 160px;
+    }
+    .input input {
+        width: 374px;
+        height: 45px;
+    }
+    #login-form  input[type=submit]{
+        width: 220px;
+        height: 50px;
+        margin-top: 30px;
+    }
+}
+
+
+
+  
+

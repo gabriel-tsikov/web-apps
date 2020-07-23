@@ -1,0 +1,26 @@
+<nav class="nav-bar" id="nav-bar">
+  <input type="checkbox" id="check" />
+  <label for="check" class="check-btn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="title">Book App</label>
+  <ul class="nav-item">
+    <li class="nav-item">
+      <a routerLink="/search-page">Home</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="authService.loggedUser()" class="" routerLink="/my-volumes"
+        >My Volumes</a
+      >
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="!authService.loggedUser()" class="" routerLink="/login"
+        >Login</a
+      >
+      <a *ngIf="authService.loggedUser()" class="" (click)="logout()"
+        >Sign out</a
+      >
+    </li>
+  </ul>
+</nav>

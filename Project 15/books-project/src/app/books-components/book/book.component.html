@@ -1,0 +1,22 @@
+<a routerLink="/details/{{ book.id }}">
+  <div class="book-box-holder">
+    <div class="book-info">
+      <p class="info bold">{{ book?.volumeInfo?.title }}</p>
+      <img
+        class="book-img"
+        *ngIf="book?.volumeInfo?.imageLinks?.thumbnail === null"
+        src="../../../assets/download.jpg"
+        alt=""
+      />
+      <img
+        class="book-img"
+        *ngIf="book?.volumeInfo?.imageLinks?.thumbnail !== null"
+        src="{{ book?.volumeInfo?.imageLinks?.thumbnail }}"
+        alt=""
+      />
+
+      <p class="info">{{ book?.volumeInfo?.authors }}</p>
+      <p class="info">{{ book?.volumeInfo?.publishedDate }}</p>
+    </div>
+  </div>
+</a>

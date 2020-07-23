@@ -1,0 +1,23 @@
+.books-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-holder {
+  display: flex;
+  margin-left: 20px;
+  color: white;
+}
+
+.loading-spinner {
+  margin-top: 300px;
+}
+
+@media (max-width: 860px) {
+  .title-holder {
+    display: flex;
+    justify-content: center;
+  }
+}

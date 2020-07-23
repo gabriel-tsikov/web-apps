@@ -1,0 +1,181 @@
+.search-holder {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-holder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.form-controller {
+  width: 600px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  padding-left: 5px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.search-button {
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #55a4ff;
+  border-radius: 3px;
+}
+
+.logo-holder {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+#title-span {
+  color: #55a4ff;
+}
+
+.search-button:hover {
+  background-color: #3876bd;
+}
+
+.choose-options {
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+}
+
+.drop-holder {
+  margin-right: 10px;
+}
+
+@media (max-width: 858px) {
+  .form-holder {
+    width: 500px;
+    height: 50px;
+  }
+
+  .form-controller {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 20px;
+  }
+
+  .search-button {
+    border: none;
+    width: 120px;
+    height: 50px;
+    background-color: #55a4ff;
+    border-radius: 3px;
+  }
+
+  .logo-holder {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .drop-holder {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .form-holder {
+    width: 400px;
+    height: 50px;
+  }
+
+  .form-controller {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    border: none;
+    width: 120px;
+    height: 50px;
+    background-color: #55a4ff;
+    border-radius: 3px;
+  }
+
+  .logo-holder {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .form-holder {
+    width: 300px;
+    height: 50px;
+  }
+
+  .form-controller {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    border: none;
+    width: 100px;
+    height: 50px;
+    background-color: #55a4ff;
+
+    border-radius: 3px;
+  }
+
+  .logo-holder {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+<section class="movie-info">           
+    <img class="movie-details-photos" src="https://image.tmdb.org/t/p/w500/{{details?.poster_path}}" alt="">
+    <div class="info">
+        <h2>Title: {{details?.title}}</h2>
+        <h2>Release Date: {{details?.release_date | date: 'dd/MM/yyyy'}}</h2>
+        <div *ngIf = "details?.genres">
+            <h2>Genre: {{details?.genres[0].name}}</h2>
+        </div>
+        <h2>Runtime: {{details?.runtime | date: 'h:mm'}}</h2>
+        <h2>Average Vote: {{(details?.vote_average*10)}}%</h2>
+        <h2>Tagline: {{details?.overview}}</h2>
+        <h2>Overview: {{details?.tagline}}</h2> 
+    </div>
+</section>
+<app-movies-cast-list></app-movies-cast-list>
+<app-movie-review-list></app-movie-review-list>
+<app-movie-recomendations-list></app-movie-recomendations-list>
+

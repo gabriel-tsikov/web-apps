@@ -1,0 +1,29 @@
+<div class="book-box-holder">
+  <div class="book-info">
+    <p class="info">{{ volume?.volumeInfo?.title }}</p>
+    <img
+      class="book-img"
+      *ngIf="volume?.volumeInfo?.imageLinks?.thumbnail === null"
+      src="../../../assets/download.jpg"
+      alt=""
+    />
+    <img
+      class="book-img"
+      *ngIf="volume?.volumeInfo?.imageLinks?.thumbnail !== null"
+      src="{{ volume?.volumeInfo?.imageLinks?.thumbnail }}"
+      alt=""
+    />
+    <p class="info">{{ volume?.volumeInfo?.authors }}</p>
+    <p class="info">{{ volume?.volumeInfo?.publishedDate }}</p>
+    <button #inputBox class="remove-btn" (click)="deleteVolume()">
+      Remove Volume
+    </button>
+    <button
+      #inputBox
+      class="remove-btn"
+      routerLink="/modal/{{volume?.id}}"
+    >
+      Edit Volume
+    </button>
+  </div>
+</div>

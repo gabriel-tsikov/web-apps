@@ -1,0 +1,11 @@
+<div class="cast-contanet">
+    <div class="title">
+        <h1>Top Casts</h1>
+        <button routerLink="./casts" class="view-cast">View All Casts</button>
+    </div>
+    
+    <div class="cast-container" >
+        <app-movie-cast *ngFor="let cast of casts.cast | slice:0:10" [cast]="cast"></app-movie-cast>
+        
+    </div>
+</div>

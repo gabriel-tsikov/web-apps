@@ -1,0 +1,12 @@
+<div class="content">
+    <div class="title">
+        <h1>Favorites</h1>
+    </div>
+    <div class="movies-container" >
+        <div class="no-movies" *ngIf="favorites==null">
+            No favorites movies! Please add your first movie.
+        </div>
+        <app-movie-favourite (removeFavorite)="removeFavorite($event)" *ngFor="let movie of favorites" [movie]= "movie"></app-movie-favourite>
+      
+    </div>
+</div>

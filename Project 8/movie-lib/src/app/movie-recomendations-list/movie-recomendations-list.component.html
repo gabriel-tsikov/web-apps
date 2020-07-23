@@ -1,0 +1,9 @@
+<div class="recomendation-contanet">
+    <div class="title">
+        <h1>Recomendations</h1>
+    </div>
+    <div class="recomendation-container" >
+        <app-movie-recomendation *ngFor="let recomendation of recomendations.results" [recomendation]="recomendation"></app-movie-recomendation>
+    </div>
+</div>
+

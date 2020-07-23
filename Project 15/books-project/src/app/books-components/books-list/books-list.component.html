@@ -1,0 +1,10 @@
+<div class="content">
+  <section class="title-holder">
+    <h2>Books</h2>
+  </section>
+  <section class="books-container">
+    <app-book *ngFor="let book of books" [book]="book"></app-book>
+    <app-spinner class="loading-spinner" *ngIf="showSpinner" ></app-spinner>
+  </section>
+  
+</div>

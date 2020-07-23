@@ -1,0 +1,96 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+html,body {
+  height: 100%;
+  
+  
+}
+main {
+  padding: 70px 0 ;
+  width: 100%;
+  max-height: 1080px;
+  
+}
+.content {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  background-color: #F2F5F7;
+}
+
+h1,h2,h3{
+  font: Regular 18px/40px Source Sans Pro;
+}
+a {
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.button {
+  min-width: 60px;
+  padding: 10px 30px;
+  height: 50px;
+  align-self: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .3s ease-in-out;
+}
+.button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+

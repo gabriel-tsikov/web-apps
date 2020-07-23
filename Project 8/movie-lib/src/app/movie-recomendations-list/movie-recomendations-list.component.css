@@ -1,0 +1,35 @@
+.recomendation-content {
+   margin-left: 20px;
+}
+
+.recomendation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.title {
+    margin-left: 20px;
+    color: #333;
+}
+
+@media screen and (max-width: 1200px) {
+   .recomendation-container {
+       display: flex;
+       justify-content: center;
+   }
+}
+
+@media screen and (max-width: 960px) {
+    
+  
+}
+
+  /* Responsive Styles */
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+  
+}

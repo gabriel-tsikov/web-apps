@@ -1,0 +1,12 @@
+<div class="movie-box-holder">
+    <div class="movie-info">
+           
+        <img src="https://image.tmdb.org/t/p/w500{{recomendation.poster_path}}" alt="">
+        <div class="information">
+            <h2>Title: {{recomendation.title}}</h2>
+            <h2>Release Date: {{recomendation.release_date | date: 'dd/MM/yyyy' }}</h2>
+            <h2>Average Vote: {{(recomendation.vote_average*10).toFixed(1)}}%</h2>
+        </div>
+        
+    </div>
+</div>

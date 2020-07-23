@@ -1,0 +1,88 @@
+.login-title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+}
+.form {
+  margin-top: 150px;
+}
+
+.login-holder {
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
+  margin-top: 20px;
+  border: 0px;
+  width: 90%;
+  height: 600px;
+  border-radius: 5px;
+  color: white;
+  background-color: #55a4ff;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.form-holder {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width: 350px;
+  height: 50px;
+}
+.required {
+  font-size: 18px;
+}
+
+.form-controller {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.buttons {
+  margin-left: 60px;
+}
+.login-button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.cancel-button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.cancel-button:hover {
+  background-color: #9e0c0cb3;
+}
+.login-button:hover {
+  background-color: #84ddb2b9;
+}
+.label-holder {
+  display: flex;
+  justify-content: space-between;
+  line-height: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .login-holder {
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+  }
+}

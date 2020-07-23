@@ -1,0 +1,69 @@
+.book-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  background-color: #55a4ff;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.download-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.download-btn {
+  background-color: #555555;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.info-header {
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #1eddee;
+}
+
+.img-detail {
+  border-radius: 20px;
+  height: 250px;
+}
+
+.txt-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.title-details {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.detail-holder {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .book-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-detail {
+    width: 150px;
+    margin-left: 35%;
+  }
+}

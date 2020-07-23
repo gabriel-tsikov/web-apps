@@ -1,0 +1,89 @@
+.modal {
+  
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 440px;
+  height: fit-content;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font: Regular 22px/25px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #585858;
+  opacity: 1;
+}
+.user-form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  
+}
+
+.project-input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.project-input-description {
+  width: 400px;
+  height: 207px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.edit-proj-btn {
+  margin-left: 60px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 33px;
+  width: 300px;
+  height: 65px;
+  background: #47BAC1 0% 0% no-repeat padding-box;
+  border-radius: 33px;
+  opacity: 1;
+}
+
+.user-input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 400px;
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  color: #47BAC1;
+  background-color: #FFFFFF;
+  margin-left: 180px;
+}

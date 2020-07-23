@@ -1,0 +1,20 @@
+.movie-info {
+    border-radius: 15px;
+    border: 1px gray;
+    background-color: #e64343;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: #d1d1d1;
+}
+.information {
+    margin-left: 40px;
+}
+img {
+    height: 250px;
+    width: 200px;
+    margin-left: 65px;
+    
+}
+

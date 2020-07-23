@@ -1,0 +1,11 @@
+<div class="content">
+    <div class="title">
+        <h1>Movies</h1>
+        <button class="more-movies" (click)="nextPage()" routerLink="/movies-list" [queryParams]="{page:currentPage}">See More Movies</button>
+
+    </div>
+    
+    <div class="movies-container" >
+        <app-movie *ngFor="let movie of libraries" [movie]= "movie"></app-movie>
+    </div>
+</div>

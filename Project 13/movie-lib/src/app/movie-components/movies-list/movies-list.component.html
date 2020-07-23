@@ -1,0 +1,13 @@
+<div class="content">
+    <div class="title">
+        <h1>Movies</h1>
+    </div>
+    <div class="movies-container" >
+       
+        <app-movie (addToFavorite)="addToFavorite($event)"  *ngFor="let movie of libraries" [movie]= "movie"></app-movie>
+      
+    </div>
+    <div class="pagination-content">
+        <app-pagination [currentPage]="currentPage" (changePage)="changePage($event)"></app-pagination>
+    </div>
+</div>

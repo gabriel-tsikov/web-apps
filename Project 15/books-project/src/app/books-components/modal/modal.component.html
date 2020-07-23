@@ -1,0 +1,62 @@
+<div class="volume-modal">
+  <h1 class="volume-title">Create Volume</h1>
+  <div class="volume-holder">
+    <form class="form" (ngSubmit)="editVolume()" [formGroup]="volumeForm">
+      <input
+        class="form-controller"
+        formControlName="id"
+        type="text"
+        name="id"
+        placeholder="Id*"
+      />
+      <input
+        class="form-controller"
+        formControlName="title"
+        type="text"
+        placeholder="Title*"
+      />
+      <input
+        class="form-controller"
+        formControlName="authors"
+        type="text"
+        placeholder="Authors*"
+      />
+      <input
+        class="form-controller"
+        formControlName="publisher"
+        type="text"
+        placeholder="Publisher*"
+      />
+      <input
+        class="form-controller"
+        formControlName="publishedDate"
+        type="date"
+        placeholder="Published Date*"
+      />
+      <input
+        class="form-controller"
+        formControlName="pageCount"
+        type="number"
+        placeholder="Page Count*"
+      />
+      <input
+        class="form-controller"
+        formControlName="thumbnail"
+        type="text"
+        placeholder="Cover Image*"
+      />
+      <div class="buttons">
+        <button
+          type="submit"
+          [disabled]="volumeForm.invalid"
+          class="volume-btn"
+        >
+          Create
+        </button>
+        <button (click)="cancel()" type="button" class="cancel-button">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<section class="book-details">
+  <div class="download-holder">
+    <img
+      class="img-detail"
+      src="{{ details?.volumeInfo?.imageLinks?.thumbnail }}"
+      alt=""
+    />
+
+    <p
+      class="txt-info"
+      *ngIf="details?.accessInfo?.epub?.acsTokenLink === undefined"
+    >
+      The book can't be downloaded!
+    </p>
+    <a
+      *ngIf="details?.accessInfo?.epub?.acsTokenLink !== undefined"
+      href="{{ details?.accessInfo?.pdf?.acsTokenLink }}"
+      class="download-btn"
+      ><i class="fa fa-download"></i
+    ></a>
+  </div>
+
+  <div class="detail-holder">
+    <p class="txt-info">
+      <span class="info-header">Title: </span> {{ details?.volumeInfo?.title }}
+    </p>
+    <p class="txt-info">
+      <span class="info-header">Authors: </span>
+      {{ details?.volumeInfo?.authors }}
+    </p>
+    <div *ngIf="details?.saleInfo?.retailPrice?.amount !== null">
+      <p class="txt-info">
+        <span class="info-header">Price: </span
+        >{{ details?.saleInfo?.retailPrice?.amount }}
+      </p>
+    </div>
+    <div *ngIf="details?.saleInfo?.retailPrice?.amount === null">
+      <p class="txt-info">
+        Not for sale
+      </p>
+    </div>
+
+    <p class="txt-info">
+      <span class="info-header">Publisher:</span>
+      {{ details?.volumeInfo?.publisher }}
+    </p>
+    <p class="txt-info">
+      <span class="info-header">Published Date:</span>
+      {{ details?.volumeInfo?.publishedDate }}
+    </p>
+    <p class="txt-info">
+      <span class="info-header">Description:</span>
+      {{ stripHtmlPipe(details?.volumeInfo?.description) }}
+    </p>
+    <p class="txt-info">
+      <span class="info-header">Categories:</span>
+      {{ categoriesRegex(details?.volumeInfo?.categories) }}
+    </p>
+    <p class="txt-info">
+      <span class="info-header">Pages:</span>
+      {{ details?.volumeInfo?.pageCount }}
+    </p>
+    <p
+      class="txt-info"
+      *ngIf="details?.volumeInfo?.averageRating !== undefined"
+    >
+      <span class="info-header">Average rating:</span>
+      {{ details?.volumeInfo?.averageRating }}
+    </p>
+  </div>
+</section>

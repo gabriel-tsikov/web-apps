@@ -1,0 +1,9 @@
+<div class="review-contanet">
+    <div class="title">
+        <h1>Top Reviews</h1>
+        <button routerLink="./reviews" class="view-cast">View All Reviews</button>
+    </div>
+    <div class="review-container" >
+        <app-movie-review *ngFor="let review of reviews?.results | slice:0:counte" [review]="review"></app-movie-review>
+    </div>
+</div>

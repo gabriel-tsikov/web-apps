@@ -1,0 +1,16 @@
+<a routerLink="/details/{{movie.id}}"> 
+    <div class="movie-box-holder">
+        <div class="movie-info">
+            <img class="movie-img" src="https://image.tmdb.org/t/p/w500{{movie?.poster_path}}" alt="">
+            <div class="information">
+                <b class="txt-info">Title: {{movie?.title}}</b>
+                <b class="txt-info">Release Date: {{movie?.release_date | date: 'dd/MM/yyyy' }}</b>
+                <b class="txt-info">Average Vote: {{(movie?.vote_average*10).toFixed(1)}}%</b>
+            </div>
+            <div class="button-container">
+                <button #inputBox (click)="fireEvent($event)" class="favorite-button">Remove favorite</button>
+            </div>
+        
+        </div>
+    </div>
+</a>
